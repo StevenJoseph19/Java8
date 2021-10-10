@@ -1,0 +1,3 @@
+javac -classpath ".\junit4.jar"; AssertionsTest.java JUnitRunner.java
+
+java -classpath ".\junit4.jar"; JUnitRunner
