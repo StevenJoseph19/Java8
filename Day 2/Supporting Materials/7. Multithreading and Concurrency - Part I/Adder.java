@@ -20,8 +20,11 @@ public class Adder {
 		int total = 0;
 		String line = null;
 		try (BufferedReader reader = Files.newBufferedReader(Paths.get(inFile))) {
-			while ((line = reader.readLine()) != null)
+			while ((line = reader.readLine()) != null) {
+			
 				total += Integer.parseInt(line);
+			}
+
 		}
 		try (BufferedWriter writer = Files.newBufferedWriter(Paths.get(outFile))) {
 			writer.write("Total: " + total);
